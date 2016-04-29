@@ -9,14 +9,19 @@ import { EditKegDetailsComponent } from './edit-keg-details.component';
     outputs: ['onKegSelect'],
     directives: [EditKegDetailsComponent],
     template: `
-    <div class="kegInfo {{ priceyPintClass }} ">
-    <h3>{{ keg.name + " " + "$" + keg.price}}</h3>
-    <p class="pintInfo {{ lowKegClass }} ">{{ "Pints: " + keg.pints  }}</p>
-    <h4>{{ keg.brand }}</h4>
-    <p>{{ "ABV " + keg.alcoholContent + "%" }}</p>
-    <button (click)="buyPint(keg) ">Buy a pint!</button>
-    <button (click)="editInfo(keg)">Edit</button>
-    <edit-keg-details *ngIf="show" [keg]="selectedKeg"></edit-keg-details>
+    <div class="kegContainer {{ priceyPintClass }} ">
+      <span class="keg-id">{{ (keg.id + 1) }}</span>
+      <div class="keg-info">
+        <div class="keg-meta">
+          <h2 class="beer-name">{{ keg.name + " " + "$" + keg.price}}</h2>
+          <h3 class="brewery-name">{{ keg.brand }}</h3>
+          <p class="alchohol-content">{{ "ABV " + keg.alcoholContent + "%" }}</p>
+        </div>
+        <p class="pintInfo {{ lowKegClass }} ">{{ "Pints: " + keg.pints  }}</p>
+        <button (click)="buyPint(keg) ">Buy a pint!</button>
+        <button (click)="editInfo(keg)">Edit</button>
+        <edit-keg-details *ngIf="show" [keg]="selectedKeg"></edit-keg-details>
+      </div>
     </div>
      `
 })

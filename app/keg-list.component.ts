@@ -18,9 +18,11 @@ import { EmptyPipe } from './empty.pipe';
     <option value="empty">Empty Kegs</option>
   </select>
   <new-keg (onSubmitNewKeg)="createKeg($event)"></new-keg>
-  <keg-display *ngFor="#currentKeg of kegList | empty:filterEmpty"
-    [keg]="currentKeg" [priceyPintClass]="isExpensive(currentKeg)" [lowKegClass]="isLow(currentKeg)" >
-  </keg-display>
+  <div class="keg-array">
+    <keg-display *ngFor="#currentKeg of kegList | empty:filterEmpty"
+      [keg]="currentKeg" [priceyPintClass]="isExpensive(currentKeg)" [lowKegClass]="isLow(currentKeg)" >
+    </keg-display>
+  </div>
   `
 })
 export class KegListComponent {

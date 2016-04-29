@@ -1,16 +1,4 @@
-.selected {
-  color: #22bdf0;
-}
-
-.foo {
-  background: red;
-}
-.expensivePint {
-  h3{
-    color: orange;
-  }
-}
-
-.kegIsLow {
-  color: red;
-}
+@import 'utils/module';
+@import 'base/module';
+@import 'components/module';
+@import 'layout/module';
