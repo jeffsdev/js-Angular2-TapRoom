@@ -1,10 +1,30 @@
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  height: 100px;
+  align-items: flex-start;
+  // height: 10vh;
+  min-height: 75px;
+  padding: 10px;
   h1 {
     font-size: 2rem;
     color: #fff;
+    flex: 1 50%;
+    display: block;
+    margin-bottom: 20px;
+    @media screen and(min-width: $mediumScreen) {
+      margin-bottom: 0;
+    }
+  }
+  select {
+    height: 32px;
+    text-align: center;
+  }
+  new-keg {
+      text-align: center;
+      margin: auto;
+    h2 {
+      margin-bottom: 10px;
+    }
   }
 }
