@@ -53,6 +53,9 @@
     font-size: 1.25rem;
     max-width: 75%;
     margin: 10px 0;
+    @media screen and(min-width: $mediumScreen) {
+      font-size: 1.5rem;
+    }
   }
   h3 {
     font-size: 1.15rem;
