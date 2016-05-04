@@ -45,8 +45,10 @@
   border: 1px solid blue;
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: baseline;
 }
+
 .keg-meta {
   flex: 2 100%;
   h2 {
