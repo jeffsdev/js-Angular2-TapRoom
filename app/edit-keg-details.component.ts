@@ -16,7 +16,8 @@ import {Keg} from './keg.model';
     <label>ABV%:</label>
     <input [(ngModel)]="keg.alcoholContent" type="number" placeholder="Alcohol Content" step="0.1" min="0">
     <label>Pints Remaining:</label>
-    <input [(ngModel)]="keg.pints" type="number" placeholder="Pints in keg" min="1" max="120" step="1">
+    <span id="slider-value" style="color:red;"></span><br>
+    1<input [(ngModel)]="keg.pints" class="pint-slider" width="100" type="range" name="Pints in keg" min="1" max="120" step="1" onchange="show_value(this.value)">120
   </div>
   `
 })
