@@ -1,7 +1,9 @@
 .keg-array {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  // justify-content: space-between;
+  height: 100vh;
 }
 
 .kegContainer {
@@ -46,7 +48,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: baseline;
+  align-items: center;
 }
 
 .keg-meta {
@@ -65,6 +67,11 @@
   }
 }
 
+.pint-price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 25px;
+}
 
 .pintInfo {
   margin-top: 10px;

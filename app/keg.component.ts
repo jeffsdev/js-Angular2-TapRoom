@@ -13,12 +13,12 @@ import { EditKegDetailsComponent } from './edit-keg-details.component';
       <span class="keg-id">{{ (keg.id + 1) }}</span>
       <div class="keg-info">
         <div class="keg-meta">
-          <h2 class="beer-name">{{ keg.name + " " + "$" + keg.price}}</h2>
+          <h2 class="beer-name">{{ keg.name }}</h2>
           <h3 class="brewery-name">{{ keg.brand }}</h3>
           <p class="alchohol-content">{{ "ABV " + keg.alcoholContent + "%" }}</p>
         </div>
 
-          <p class="pintInfo {{ lowKegClass }} ">{{ "Pints: " + keg.pints  }}</p>
+          <p class="pintInfo {{ lowKegClass }} ">{{ "Pints: " + keg.pints  }} <span class="pint-price">{{ "$" + keg.price }}</span></p>
           <button class="buy-btn" (click)="buyPint(keg) ">Buy a pint!</button>
 
           <button class="edit-btn"(click)="editInfo(keg)">
