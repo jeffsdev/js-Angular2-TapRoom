@@ -9,7 +9,7 @@ import { EditKegDetailsComponent } from './edit-keg-details.component';
     outputs: ['onKegSelect'],
     directives: [EditKegDetailsComponent],
     template: `
-    <div class="kegContainer {{ priceyPintClass }} ">
+    <div class="kegContainer">
       <span class="keg-id">{{ (keg.id + 1) }}</span>
       <div class="keg-info">
         <div class="keg-meta">
@@ -18,7 +18,7 @@ import { EditKegDetailsComponent } from './edit-keg-details.component';
           <p class="alchohol-content">{{ "ABV " + keg.alcoholContent + "%" }}</p>
         </div>
 
-          <p class="pintInfo {{ lowKegClass }} ">{{ "Pints: " + keg.pints  }} <span class="pint-price">{{ "$" + keg.price }}</span></p>
+          <p class="pintInfo {{ lowKegClass }} ">{{ "Pints: " + keg.pints  }} <span class="pint-price {{ priceyPintClass }} ">{{ "$" + keg.price }}</span></p>
           <button class="buy-btn" (click)="buyPint(keg) ">Buy a pint!</button>
 
           <button class="edit-btn"(click)="editInfo(keg)">

@@ -3,11 +3,13 @@ header {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  // height: 10vh;
+  background: rgba(0, 0, 0, 0.75);
   min-height: 10vh;
   padding: 10px;
   h1 {
-    font-size: 2rem;
+    font-family: $passionStack;
+    font-weight: normal;
+    font-size: 3rem;
     color: #fff;
     flex: 1 50%;
     display: block;

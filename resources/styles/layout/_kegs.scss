@@ -6,13 +6,14 @@
 
 .kegContainer {
   width: 100vw;
-  height: 150px;
+  height: 175px;
   min-height: 135px;
-  background: linear-gradient(to bottom, #666a6f 0%,#222222 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,1) 100%);
   display: flex;
   align-items: center;
   padding: 10px;
-  border: 4px solid #111;
+  border: 4px solid #555;
+  font-family: $vollkornStack;
   @media screen and(min-width: $largeScreen) {
     width: 49vw;
   }
@@ -46,16 +47,20 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+  color: #ccc;
 }
 
 .keg-meta {
   flex: 2 100%;
-  h2 {
-    font-size: 1.25rem;
+  .beer-name {
+    font-family: $passionStack;
+    font-weight: normal;
+    letter-spacing: 3;
+    font-size: 1.5rem;
     max-width: 75%;
     margin: 10px 0;
     @media screen and(min-width: $mediumScreen) {
-      font-size: 1.5rem;
+      font-size: 2.25rem;
     }
   }
   h3 {
@@ -107,9 +112,7 @@
   background: red;
 }
 .expensivePint {
-  h2{
     color: orange;
-  }
 }
 
 .kegIsLow {
