@@ -4,6 +4,7 @@
   position: absolute;
   top: 0;
   right: 0;
+  fill: #555;
 }
 
 .buy-btn,
@@ -11,12 +12,15 @@ new-keg button {
   padding: 10px;
   margin-left: 20px;
   color: #fff;
-  background: #598;
+  background: $darkBlue;
 }
 
 
 new-keg {
   button {
     margin-top: 10px;
+    &:hover {
+      background: $lightBlue;
+    }
   }
 }

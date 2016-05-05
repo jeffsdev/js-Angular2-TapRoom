@@ -30,9 +30,3 @@ export class NewKegComponent {
     userAlcoholContent.value = "";
   }
 }
-
-// var expensive = false;
-// if(userPrice.value >= 4) {
-//   expensive = true;
-//   console.log(expensive);
-// }

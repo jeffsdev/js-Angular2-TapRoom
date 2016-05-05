@@ -5,11 +5,34 @@
     border: none;
     outline: none;
     background: none;
-    border-bottom: 3px solid teal;
+    border-bottom: 3px solid $darkBlue;
     color: white;
     font-size: 0.9rem;
     &:focus {
-      border-color: green;
+      border-color: $lightBlue;
     }
+  }
+}
+
+
+.edit-keg-form {
+  color: #ccc;
+  position: absolute;
+  top:0%;
+  left: 0;
+  width: 85%;
+  padding: 15px 10px 20px 10px;
+  background: #444;
+  border: 3px solid #222;
+  z-index: 9999;
+  h2 {
+    text-align: center;
+  }
+  label {
+  }
+  input {
+    margin: 5px 0 10px 0;
+    width: 75%;
+    display: block;
   }
 }
