@@ -1,11 +1,11 @@
 .keg-array {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .kegContainer {
-  width: 100vw;
+  width: 96vw;
   height: 200px;
   min-height: 135px;
   background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,1) 100%);
@@ -56,7 +56,7 @@
     min-height: 1.5rem;
     font-family: $passionStack;
     font-weight: normal;
-    color: #DDA767;
+    color: $paleAle;
     letter-spacing: 3;
     font-size: 1.5rem;
     max-width: 75%;

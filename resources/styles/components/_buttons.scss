@@ -1,3 +1,9 @@
+.buttonPrimary {
+  padding: 10px;
+  margin-left: 20px;
+  color: $buttonText;
+}
+
 .edit-btn {
   width: 50px;
   height: 50px;
@@ -9,16 +15,16 @@
 
 .buy-btn,
 new-keg button {
-  padding: 10px;
-  margin-left: 20px;
-  color: #fff;
-  background: $darkBlue;
+  @extend .buttonPrimary;
+  background: $aleBrown;
 }
 
 
 new-keg {
   button {
+    @extend .buttonPrimary;
     margin-top: 10px;
+    background: $darkBlue;
     &:hover {
       background: $lightBlue;
     }
