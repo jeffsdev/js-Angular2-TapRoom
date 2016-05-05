@@ -1,0 +1,15 @@
+.keg-form {
+  input {
+    height: 30px;
+    padding: 5px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid teal;
+    color: white;
+    font-size: 1rem;
+    &:focus {
+      border-color: green;
+    }
+  }
+}
