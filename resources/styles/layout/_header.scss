@@ -2,7 +2,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   background: rgba(0, 0, 0, 0.75);
   border-bottom: 10px solid #111;
   min-height: 10vh;
@@ -14,9 +14,15 @@ header {
     font-size: 3rem;
     flex: 1 50%;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 00px;
     @media screen and(min-width: $mediumScreen) {
       margin-bottom: 0;
+    }
+  }
+  .filter {
+    margin: 1em auto 0 0;
+    @media screen and(min-width: 510px) {
+      margin-top: 0;
     }
   }
   select {
@@ -30,5 +36,12 @@ header {
     h2 {
       margin-bottom: 10px;
     }
+  }
+  a {
+    flex: 2 50%;
+    margin: 0 20px 0 1px;
+  }
+  span {
+    margin-left: auto;
   }
 }

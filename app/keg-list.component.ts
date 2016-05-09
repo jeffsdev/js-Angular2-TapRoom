@@ -14,12 +14,15 @@ import { EmptyPipe } from './empty.pipe';
   template: `
   <header>
     <h1>Pint Me!</h1>
-    <span>Filter Kegs:</span>
-    <select (change)="onChange($event.target.value)" class="filter">
-      <option value="all">Kegs with Pints</option>
-      <option value="low">Almost empty kegs</option>
-      <option value="empty">Empty Kegs</option>
-    </select>
+    <a href="https://github.com/jeffsdev/js-Angular2-TapRoom" target="_blank">View Documentation on GitHub</a>
+    <div class="filter">
+      <span>Filter Kegs:</span>
+      <select (change)="onChange($event.target.value)" class="filter">
+        <option value="all">Kegs with Pints</option>
+        <option value="low">Almost empty kegs</option>
+        <option value="empty">Empty Kegs</option>
+      </select>
+    </div>
     <new-keg (onSubmitNewKeg)="createKeg($event)"></new-keg>
   </header>
   <div class="keg-array">
