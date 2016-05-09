@@ -14,6 +14,7 @@ import { EmptyPipe } from './empty.pipe';
   template: `
   <header>
     <h1>Pint Me!</h1>
+    <span>Filter Kegs:</span>
     <select (change)="onChange($event.target.value)" class="filter">
       <option value="all">Kegs with Pints</option>
       <option value="low">Almost empty kegs</option>

@@ -7,11 +7,11 @@ header {
   border-bottom: 10px solid #111;
   min-height: 10vh;
   padding: 10px;
+  color: $greytext;
   h1 {
     font-family: $passionStack;
     font-weight: normal;
     font-size: 3rem;
-    color: #fff;
     flex: 1 50%;
     display: block;
     margin-bottom: 20px;
@@ -21,6 +21,7 @@ header {
   }
   select {
     height: 32px;
+    margin-left: 5px;
     text-align: center;
   }
   new-keg {

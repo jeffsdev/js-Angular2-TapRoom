@@ -10,7 +10,12 @@
   position: absolute;
   top: 0;
   right: 0;
-  fill: #555;
+  fill: #777;
+  &:hover,
+  &:active,
+  &:focus {
+    fill: $greytext;
+  }
 }
 
 .buy-btn {

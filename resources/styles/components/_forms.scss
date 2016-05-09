@@ -12,11 +12,14 @@
       border-color: $lightBlue;
     }
   }
+  h2 {
+    color: $greytext;
+  }
 }
 
 
 .edit-keg-form {
-  color: #ccc;
+  color: $greytext;
   position: absolute;
   top:0%;
   left: 0;
