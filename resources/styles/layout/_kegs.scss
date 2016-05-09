@@ -91,13 +91,10 @@
   color: #22bdf0;
 }
 
-.foo {
-  background: red;
-}
 .expensivePint {
-    color: orange;
+    color: $aleBrown;
 }
 
 .kegIsLow {
-  color: red;
+  color: $redAle;
 }

@@ -13,10 +13,14 @@
   fill: #555;
 }
 
-.buy-btn,
-new-keg button {
+.buy-btn {
   @extend .buttonPrimary;
-  background: $aleBrown;
+  background: $darkHop;
+  background: none;
+  border: 2px solid $darkHop;
+  &:hover {
+    background: $hopGreen;
+  }
 }
 
 

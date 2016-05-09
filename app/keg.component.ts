@@ -19,7 +19,7 @@ import { EditKegDetailsComponent } from './edit-keg-details.component';
         </div>
 
           <p class="pintInfo {{ lowKegClass }} ">{{ "Pints: " + keg.pints  }} <span class="pint-price {{ priceyPintClass }} ">{{ "$" + keg.price }}</span></p>
-          <button class="buy-btn" (click)="buyPint(keg) ">Buy a pint!</button>
+          <button class="buy-btn" (click)="buyPint(keg) ">Buy a Pint!</button>
 
           <button class="edit-btn"(click)="editInfo(keg)">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
