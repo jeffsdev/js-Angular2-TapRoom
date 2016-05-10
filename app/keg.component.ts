@@ -48,23 +48,16 @@ export class KegComponent {
   constructor() {
     this.onKegSelect = new EventEmitter();
   }
-
   buyPint(clickedKeg: Keg): void{
     if(clickedKeg.pints <= 0) {
       clickedKeg.pints === 0;
     } else {
       clickedKeg.pints -= 1;
+    }
   }
-}
   editInfo(clickedKeg: Keg) :void {
     this.show = !this.show;
     console.log(this.selectedKeg);
     this.selectedKeg = clickedKeg;
-    // this.onKegSelect.emit(clickedKeg);
   }
-
 }
-
-// if clickedKeg.pints <= 120 {
-//
-// }

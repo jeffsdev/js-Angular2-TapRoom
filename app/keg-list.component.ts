@@ -41,11 +41,8 @@ export class KegListComponent {
     this.onKegSelect = new EventEmitter();
   }
   createKeg([name, brand, price, alcoholContent]): void {
-
     var newKeg = new Keg(name, brand, price, alcoholContent, this.kegList.length);
-
     this.kegList.push(newKeg);
-
   }
   onChange(filterOption) {
     this.filterEmpty = filterOption;
@@ -61,8 +58,3 @@ export class KegListComponent {
     }
   }
 }
-
-
-
-// (click)="kegClicked(currentKeg)"
-// [class.selected]="currentKeg === selectedKeg">
