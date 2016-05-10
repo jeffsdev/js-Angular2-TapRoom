@@ -14,10 +14,7 @@ header {
     font-size: 3rem;
     flex: 1 50%;
     display: block;
-    margin-bottom: 00px;
-    @media screen and(min-width: $mediumScreen) {
-      margin-bottom: 0;
-    }
+    margin-bottom: 0;
   }
   .filter {
     margin: 1em auto 0 0;
