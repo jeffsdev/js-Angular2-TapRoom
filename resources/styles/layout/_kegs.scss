@@ -1,9 +1,11 @@
+//Container that holds all the Keg divs
 .keg-array {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+//An individual Keg div
 .kegContainer {
   width: 90vw;
   height: 250px;
@@ -27,14 +29,9 @@
   }
 }
 
-.keg-info {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
 
 
+//Keg's ID number , blue sphere
 .keg-id {
   height: 50px;
   width: 50px;
@@ -49,15 +46,18 @@
   margin-right: 10px;
 }
 
+//Inner keg div container
 .keg-info {
-  position: relative;
   display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
   flex-wrap: wrap;
   justify-content: flex-end;
-  align-items: center;
   color: $greytext;
 }
 
+//Primary Keg information, ie. Name, brand, abv
 .keg-meta {
   flex: 2 100%;
   .beer-name {
@@ -88,9 +88,6 @@
 .pintInfo {
   margin-top: 10px;
 }
-
-
-
 
 
 /* CONDITIONALS */
