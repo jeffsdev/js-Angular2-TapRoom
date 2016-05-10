@@ -80,6 +80,7 @@
 }
 
 .pint-price {
+  color: $greytext;
   font-size: 2rem;
   font-weight: bold;
   margin-left: 25px;
@@ -97,7 +98,7 @@
 }
 
 .expensivePint {
-    color: $aleBrown;
+  color: $aleBrown;
 }
 
 .kegIsLow {
