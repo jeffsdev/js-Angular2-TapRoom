@@ -1,12 +1,13 @@
 # Tap Room
 #### April 2016
-##### By Jeff Seymour
+##### By Jeff Seymour, Mao Thygesen
 
 ## Description
-##### An app that displays kegs that a bar/tavern has on tap.  
+##### An app that dynamically displays kegs that a bar/tavern has on tap.  
+This application is built with the Angular 2 JavaScript framework, and shows a list of kegs that a bar or tavern might have on tap. Low, empty and expensive kegs can be filtered and are styled dynamically in CSS. Users can also add new kegs, update and delete kegs.
 
 ## Technologies Used
-Angular 2, JavaScript, TypeScript, Gulp, Bower, HTML, SASS/SCSS,
+Angular 2, JavaScript, TypeScript, Gulp, Bower, npm, HTML, SASS/SCSS,
 
 ## Setup/Installation  
 * Clone this repository.
